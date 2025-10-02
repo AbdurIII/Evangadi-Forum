@@ -1,0 +1,85 @@
+.footer_container {
+    background-color: rgb(59, 69, 90);
+    display: flex;
+    justify-content: space-around;
+    /* height: 11rem; */
+    padding-top: 20px;
+}
+.footer_container a{
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 0.7rem;
+    color: #d0c9c9;
+    padding-left: 0.4rem;
+}
+
+.footer_container h1 {
+    color: #fff;
+    padding-bottom: 1rem;
+}
+
+.footer_container ul {
+    list-style: none;
+    color: rgb(14, 45, 45);
+}
+
+.footer_container ul li {
+    padding-bottom: 0.7rem;
+    padding-left: 0.4rem;
+    color: #d0c9c9;
+}
+
+.footer_links {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 9px;
+}
+
+.footer_links i{
+    padding-top: 10px;
+    width: 28px;
+}
+.contact_info{
+    margin-left: 40px;
+}
+.btn button {
+    background-color: #38475a;
+    border: none;
+    color: #dddddd;
+    font-weight: 300;
+    text-align: end;
+    align-items: end;
+    margin-left: 450px;
+}
+
+
+.btn button:hover {
+    background-color: #485769;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .footer_links img {
+        width: 3vw;
+    }
+
+    .eva_logo {
+        width: 22vw;
+    }
+
+    * .footer_container ul li a {
+        font-size: 0.9rem;
+    }
+.footer_container{
+    display:flex;
+    flex-direction:column;
+    align-items:center
+}
+    .footer_container ul li {
+        font-size: 0.9rem;
+    }
+
+    .footer_container div h1 {
+        font-size: 1.1rem;
+    }
+}
