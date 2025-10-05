@@ -71,7 +71,7 @@ function Home() {
             </div>
             <div style={{ fontSize: "20px", fontWeight: "300" }}>
               <p>
-                WELCOME:<span style={{ color: " #DA7229" }}>{user}</span>
+                WELCOME: <span style={{ color: " #DA7229" }}>{user}</span>
               </p>
             </div>
           </div>

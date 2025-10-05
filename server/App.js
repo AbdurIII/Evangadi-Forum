@@ -5,7 +5,7 @@ const answerRoutes = require("./routes/answerRoute");
 const authMiddleware = require("./middleware/authMiddleware");
 
 const app = express();
-const port = 5500;
+const PORT = process.env.PORT || 5500;
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
@@ -30,7 +30,10 @@ app.use("/api", authMiddleware, questionRoutes);
 app.use("/api", authMiddleware, answerRoutes);
 
 // Start server
-app.listen(port, (error) => {
-  if (error) console.log(error.message);
-  console.log(`Listening to :${port}`);
+app.listen(PORT, (error) => {
+  if (error) {
+    console.log(error.message);
+  } else {
+    console.log(`Server running on PORT ${PORT}`);
+  }
 });

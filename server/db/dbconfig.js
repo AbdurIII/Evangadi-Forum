@@ -16,7 +16,7 @@ dbConnection.getConnection((err) => {
     console.error("Database connection failed:", err.message);
     return;
   }
-  console.log("Connected to the database successfully!");
+  console.log("Connected to the freesqldatabase successfully!");
 });
 
 module.exports = dbConnection.promise();
