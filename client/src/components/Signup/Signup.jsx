@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Classes from "./signUp.module.css";
+import Classes from "./signup.module.css";
 import { BiHide, BiShow } from "react-icons/bi";
 import axios from "../../Api/axios";
 import { Link, useNavigate } from "react-router-dom";
